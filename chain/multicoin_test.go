@@ -28,16 +28,16 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
-	"github.com/ava-labs/coreth/accounts/keystore"
-	"github.com/ava-labs/coreth/consensus/dummy"
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/rawdb"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/core/vm"
-	"github.com/ava-labs/coreth/eth"
-	"github.com/ava-labs/coreth/eth/ethconfig"
-	"github.com/ava-labs/coreth/node"
+	"github.com/Toinounet21/crabalanchego/utils/timer/mockable"
+	"github.com/Toinounet21/crabeth/accounts/keystore"
+	"github.com/Toinounet21/crabeth/consensus/dummy"
+	"github.com/Toinounet21/crabeth/core"
+	"github.com/Toinounet21/crabeth/core/rawdb"
+	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/crabeth/eth"
+	"github.com/Toinounet21/crabeth/eth/ethconfig"
+	"github.com/Toinounet21/crabeth/node"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
@@ -73,7 +73,7 @@ func TestMulticoin(t *testing.T) {
 	//if gopath == "" {
 	//	gopath = build.Default.GOPATH
 	//}
-	//counterSrc, err := filepath.Abs(gopath + "/src/github.com/ava-labs/coreth/examples/multicoin/mc_test.sol")
+	//counterSrc, err := filepath.Abs(gopath + "/src/github.com/Toinounet21/crabeth/examples/multicoin/mc_test.sol")
 	//if err != nil {
 	// 	t.Fatal(err)
 	// }

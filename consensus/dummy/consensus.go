@@ -10,12 +10,12 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ava-labs/coreth/consensus"
-	"github.com/ava-labs/coreth/core/state"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/rpc"
-	"github.com/ava-labs/coreth/trie"
+	"github.com/Toinounet21/crabeth/consensus"
+	"github.com/Toinounet21/crabeth/core/state"
+	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/crabeth/rpc"
+	"github.com/Toinounet21/crabeth/trie"
 	"github.com/ethereum/go-ethereum/common"
 )
 

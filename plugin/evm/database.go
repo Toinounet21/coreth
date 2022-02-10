@@ -4,9 +4,9 @@
 package evm
 
 import (
-	"github.com/ava-labs/coreth/ethdb"
+	"github.com/Toinounet21/crabeth/ethdb"
 
-	"github.com/ava-labs/avalanchego/database"
+	"github.com/Toinounet21/crabalanchego/database"
 )
 
 // Database implements ethdb.Database

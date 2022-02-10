@@ -9,13 +9,13 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/Toinounet21/crabalanchego/utils/math"
 
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/trie"
+	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/crabeth/trie"
 
-	coreth "github.com/ava-labs/coreth/chain"
+	coreth "github.com/Toinounet21/crabeth/chain"
 )
 
 var (

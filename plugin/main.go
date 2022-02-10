@@ -9,10 +9,10 @@ import (
 
 	"github.com/hashicorp/go-plugin"
 
-	"github.com/ava-labs/avalanchego/utils/ulimit"
-	"github.com/ava-labs/avalanchego/vms/rpcchainvm"
+	"github.com/Toinounet21/crabalanchego/utils/ulimit"
+	"github.com/Toinounet21/crabalanchego/vms/rpcchainvm"
 
-	"github.com/ava-labs/coreth/plugin/evm"
+	"github.com/Toinounet21/crabeth/plugin/evm"
 )
 
 func main() {

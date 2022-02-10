@@ -1,10 +1,10 @@
-module github.com/ava-labs/coreth
+module github.com/Toinounet21/crabeth
 
 go 1.16
 
 require (
 	github.com/VictoriaMetrics/fastcache v1.6.0
-	github.com/ava-labs/avalanchego v1.7.5-0.20220202014036-7c45dd1e2377
+	github.com/Toinounet21/crabalanchego v1.8.0
 	github.com/btcsuite/btcd v0.21.0-beta // indirect
 	github.com/cespare/cp v0.1.0
 	github.com/davecgh/go-spew v1.1.1

@@ -29,9 +29,9 @@ package keystore
 import (
 	"math/big"
 
-	"github.com/ava-labs/coreth/accounts"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/interfaces"
+	"github.com/Toinounet21/crabeth/accounts"
+	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/crabeth/interfaces"
 	"github.com/ethereum/go-ethereum/crypto"
 )
 

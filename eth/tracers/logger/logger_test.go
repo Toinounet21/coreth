@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ava-labs/coreth/core/state"
-	"github.com/ava-labs/coreth/core/vm"
-	"github.com/ava-labs/coreth/params"
+	"github.com/Toinounet21/crabeth/core/state"
+	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/crabeth/params"
 	"github.com/ethereum/go-ethereum/common"
 )
 

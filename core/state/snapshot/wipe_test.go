@@ -30,8 +30,8 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ava-labs/coreth/core/rawdb"
-	"github.com/ava-labs/coreth/ethdb/memorydb"
+	"github.com/Toinounet21/crabeth/core/rawdb"
+	"github.com/Toinounet21/crabeth/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/common"
 )
 

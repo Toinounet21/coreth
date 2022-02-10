@@ -37,15 +37,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ava-labs/coreth/consensus"
-	"github.com/ava-labs/coreth/core/rawdb"
-	"github.com/ava-labs/coreth/core/state"
-	"github.com/ava-labs/coreth/core/state/snapshot"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/core/vm"
-	"github.com/ava-labs/coreth/ethdb"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/trie"
+	"github.com/Toinounet21/crabeth/consensus"
+	"github.com/Toinounet21/crabeth/core/rawdb"
+	"github.com/Toinounet21/crabeth/core/state"
+	"github.com/Toinounet21/crabeth/core/state/snapshot"
+	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/crabeth/ethdb"
+	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/crabeth/trie"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/event"
 	"github.com/ethereum/go-ethereum/log"
@@ -967,7 +967,7 @@ func (bc *BlockChain) insertBlock(block *types.Block, writes bool) error {
 	if err := bc.writeBlockAndSetHead(block, receipts, logs, statedb); err != nil {
 		return err
 	}
-	log.Debug("Inserted new block", "number", block.Number(), "hash", block.Hash(),
+	log.Info("Inserted new block", "number", block.Number(), "hash", block.Hash(),
 		"parentHash", block.ParentHash(),
 		"uncles", len(block.Uncles()), "txs", len(block.Transactions()), "gas", block.GasUsed(),
 		"elapsed", common.PrettyDuration(time.Since(start)),

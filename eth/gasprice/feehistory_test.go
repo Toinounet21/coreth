@@ -32,11 +32,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/types"
+	"github.com/Toinounet21/crabeth/core"
+	"github.com/Toinounet21/crabeth/core/types"
 
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/rpc"
+	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/crabeth/rpc"
 	"github.com/ethereum/go-ethereum/common"
 )
 

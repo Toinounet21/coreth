@@ -10,14 +10,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/coreth/plugin/evm/message"
+	"github.com/Toinounet21/crabeth/plugin/evm/message"
 
-	"github.com/ava-labs/avalanchego/snow/validators"
+	"github.com/Toinounet21/crabalanchego/snow/validators"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/Toinounet21/crabalanchego/codec"
+	"github.com/Toinounet21/crabalanchego/ids"
+	"github.com/Toinounet21/crabalanchego/snow/engine/common"
+	"github.com/Toinounet21/crabalanchego/version"
 	"github.com/ethereum/go-ethereum/log"
 	"golang.org/x/sync/semaphore"
 )

@@ -32,11 +32,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/state"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/core/vm"
-	"github.com/ava-labs/coreth/trie"
+	"github.com/Toinounet21/crabeth/core"
+	"github.com/Toinounet21/crabeth/core/state"
+	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/crabeth/trie"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 )

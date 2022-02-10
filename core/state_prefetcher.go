@@ -30,11 +30,11 @@ import (
 	"math/big"
 	"sync/atomic"
 
-	"github.com/ava-labs/coreth/consensus"
-	"github.com/ava-labs/coreth/core/state"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/core/vm"
-	"github.com/ava-labs/coreth/params"
+	"github.com/Toinounet21/crabeth/consensus"
+	"github.com/Toinounet21/crabeth/core/state"
+	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/crabeth/params"
 )
 
 // statePrefetcher is a basic Prefetcher, which blindly executes a block on top

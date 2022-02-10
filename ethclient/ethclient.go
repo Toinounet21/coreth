@@ -34,11 +34,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/coreth/accounts/abi/bind"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/interfaces"
-	"github.com/ava-labs/coreth/rpc"
+	"github.com/Toinounet21/crabalanchego/ids"
+	"github.com/Toinounet21/crabeth/accounts/abi/bind"
+	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/crabeth/interfaces"
+	"github.com/Toinounet21/crabeth/rpc"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 )

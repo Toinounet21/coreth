@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/Toinounet21/crabalanchego/ids"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ava-labs/coreth/plugin/evm/message"
+	"github.com/Toinounet21/crabeth/plugin/evm/message"
 )
 
 // locally issued txs should be gossiped
