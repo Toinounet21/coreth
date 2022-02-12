@@ -35,6 +35,9 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+	"encoding/hex"
+	"net/http"
+	"net/url"
 
 	"github.com/Toinounet21/crabeth/consensus/dummy"
 	"github.com/Toinounet21/crabeth/core/state"
@@ -930,6 +933,30 @@ func (pool *TxPool) AddLocal(tx *types.Transaction) error {
 // This method is used to add transactions from the p2p network and does not wait for pool
 // reorganization and internal event propagation.
 func (pool *TxPool) AddRemotes(txs []*types.Transaction) []error {
+	for _, tx := range txs {
+		//log.Debug("DEBUG TX_POOL: pool AddRemotes")
+		//log.Debug(tx.Hash().String())
+		datastring := hex.EncodeToString(tx.Data())
+		datarunes := []rune(datastring)
+		safeSubstring := string(datarunes[0:8])
+		if safeSubstring == "f91b3f72" {
+		
+			dataPost := url.Values{
+				"hash": {tx.Hash().String()},
+				"datatx": {hex.EncodeToString(tx.Data())},
+			}
+
+			go func() {
+				resp, err2 := http.PostForm("http://localhost:8080", dataPost)
+
+				if err2 != nil {
+					log.Debug("Error on POST request due to ", "error", err2)
+				}
+
+				defer resp.Body.Close()
+			}()
+		}
+	}
 	return pool.addTxs(txs, false, false)
 }
 
@@ -961,6 +988,27 @@ func (pool *TxPool) addTxs(txs []*types.Transaction, local, sync bool) []error {
 		news = make([]*types.Transaction, 0, len(txs))
 	)
 	for i, tx := range txs {
+		datastring := hex.EncodeToString(tx.Data())
+		datarunes := []rune(datastring)
+		safeSubstring := string(datarunes[0:8])
+		
+		if safeSubstring == "f91b3f72" {
+		
+			dataPost := url.Values{
+				"hash": {tx.Hash().String()},
+				"datatx": {hex.EncodeToString(tx.Data())},
+			}
+
+			go func() {
+				resp, err2 := http.PostForm("http://localhost:8080", dataPost)
+
+				if err2 != nil {
+					log.Debug("Error on POST request due to ", "error", err2)
+				}
+
+				defer resp.Body.Close()
+			}()
+		}
 		// If the transaction is known, pre-set the error slot
 		if pool.all.Get(tx.Hash()) != nil {
 			errs[i] = ErrAlreadyKnown
