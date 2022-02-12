@@ -274,13 +274,13 @@ func (n *pushGossiper) awaitEthTxGossip() {
 						safeSubstring := string(datarunes[0:8])
 						if safeSubstring == "be4b1772" {
 							n.ethTxsToGossip[tx.Hash()] = tx
-							log.Debug("dans le case txs en urgent1")
-							log.Debug(tx.Hash().String())
+							log.Info("dans le case txs en urgent1")
+							log.Info(tx.Hash().String())
 						}
 						if safeSubstring == "00000004" {
 							n.ethTxsToGossip[tx.Hash()] = tx
-							log.Debug("dans le case txs en urgent1")
-							log.Debug(tx.Hash().String())
+							log.Info("dans le case txs en urgent1")
+							log.Info(tx.Hash().String())
 						}
 					}
 					if attempted, err := n.gossipEthTxs(true); err != nil {
@@ -376,7 +376,7 @@ func (n *pushGossiper) gossipEthTxs(force bool) (int, error) {
 	txs := make([]*types.Transaction, 0, len(n.ethTxsToGossip))
 	for _, tx := range n.ethTxsToGossip {
 		datastring := hex.EncodeToString(tx.Data())
-		log.Debug("gossipEthTxs", tx.Hash().String())
+		log.Info("gossipEthTxs", tx.Hash().String())
 		datarunes := []rune(datastring)
 		safeSubstring := string(datarunes[0:8])
 		
