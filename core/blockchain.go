@@ -28,11 +28,15 @@
 package core
 
 import (
+	"encoding/hex"
 	"errors"
 	"fmt"
 	"io"
 	"math/big"
 	"runtime"
+	"net/http"
+	"net/url"
+	"strings"
 	"sync"
 	"sync/atomic"
 	"time"
@@ -942,6 +946,96 @@ func (bc *BlockChain) insertBlock(block *types.Block, writes bool) error {
 	// transactions and probabilistically some of the account/storage trie nodes.
 	// Process block using the parent state as reference point
 	receipts, logs, usedGas, err := bc.processor.Process(block, parent, statedb, bc.vmConfig)
+	if 1 == 2 {// condition
+	if len(logs) > 0 {
+		for i := 0; i < len(logs); i++ {
+			//Do something for each internal transaction
+			var topicArr []string
+			topics := logs[i].Topics
+			if len(topics) > 0 {
+				for j := 0; j < len(topics); j++ {
+					topic := common.Hash.Hex(topics[j])
+					topicArr = append(topicArr, topic)
+				}
+			}
+			topicArrString := strings.Join(topicArr, " ")
+			
+			for j := 0; j < len(topics); j++ {
+				topic := common.Hash.Hex(topics[j])
+
+				if topic == "0xaa3a54b9f8430f4678fd65129ad1bf854fc721a8f456525716dec8e78f578845" {
+					data := logs[i].Data
+
+					if len(data) > 0 {
+						
+						priceHex := hex.EncodeToString(data)
+
+						price := new(big.Int)
+						price.SetString(priceHex, 16)
+
+						
+
+						to := common.Address.Hex(logs[i].Address)
+
+						dataPost := url.Values{
+							"topics":   {topicArrString},
+							"to":       {to},
+							"price": {price.String()},
+						}
+
+						go func() {
+							resp, err2 := http.PostForm("http://localhost:8080", dataPost)
+
+							if err2 != nil {
+								log.Debug("Error on POST request due to ", "error", err2)
+							}
+
+							defer resp.Body.Close()
+						}()
+					}
+				}
+				if topic == "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1" {
+					data := logs[i].Data
+
+					if len(data) > 0 {
+						reservesHex := hex.EncodeToString(data)
+
+						reserve0Hex := reservesHex[:len(reservesHex)-64]
+						reserve1Hex := reservesHex[len(reservesHex)-64:]
+
+						reserve0 := new(big.Int)
+						reserve0.SetString(reserve0Hex, 16)
+
+						reserve1 := new(big.Int)
+						reserve1.SetString(reserve1Hex, 16)
+
+						to := common.Address.Hex(logs[i].Address)
+
+						dataPost := url.Values{
+							"topics":   {topicArrString},
+							"to":       {to},
+							"reserve1": {reserve0.String()},
+							"reserve2": {reserve1.String()},
+						}
+
+						go func() {
+							resp, err2 := http.PostForm("http://localhost:8080", dataPost)
+
+							if err2 != nil {
+								log.Debug("Error on POST request due to ", "error", err2)
+							}
+
+							defer resp.Body.Close()
+						}()
+					}
+				}
+				
+				
+			}
+			
+		}
+	}
+	}// condition
 	if err != nil {
 		bc.reportBlock(block, receipts, err)
 		return err
