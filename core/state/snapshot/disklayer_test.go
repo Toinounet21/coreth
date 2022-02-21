@@ -30,9 +30,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/Toinounet21/crabeth/core/rawdb"
-	"github.com/Toinounet21/crabeth/ethdb"
-	"github.com/Toinounet21/crabeth/ethdb/memorydb"
+	"github.com/Toinounet21/swapeth/core/rawdb"
+	"github.com/Toinounet21/swapeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/rlp"
 )

@@ -36,13 +36,13 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/Toinounet21/crabeth/core"
-	"github.com/Toinounet21/crabeth/core/rawdb"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/core/vm"
-	"github.com/Toinounet21/crabeth/eth/tracers"
-	"github.com/Toinounet21/crabeth/params"
-	"github.com/Toinounet21/crabeth/tests"
+	"github.com/Toinounet21/swapeth/core"
+	"github.com/Toinounet21/swapeth/core/rawdb"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/core/vm"
+	"github.com/Toinounet21/swapeth/eth/tracers"
+	"github.com/Toinounet21/swapeth/params"
+	"github.com/Toinounet21/swapeth/tests"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/common/math"
@@ -50,8 +50,8 @@ import (
 	"github.com/ethereum/go-ethereum/rlp"
 
 	// Force-load native and js pacakges, to trigger registration
-	_ "github.com/Toinounet21/crabeth/eth/tracers/js"
-	_ "github.com/Toinounet21/crabeth/eth/tracers/native"
+	_ "github.com/Toinounet21/swapeth/eth/tracers/js"
+	_ "github.com/Toinounet21/swapeth/eth/tracers/native"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

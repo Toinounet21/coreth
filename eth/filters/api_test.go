@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Toinounet21/crabeth/rpc"
+	"github.com/Toinounet21/swapeth/rpc"
 	"github.com/ethereum/go-ethereum/common"
 )
 

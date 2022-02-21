@@ -29,8 +29,8 @@ package leveldb
 import (
 	"testing"
 
-	"github.com/Toinounet21/crabeth/ethdb"
-	"github.com/Toinounet21/crabeth/ethdb/dbtest"
+	"github.com/Toinounet21/swapeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb/dbtest"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/storage"
 )

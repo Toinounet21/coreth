@@ -43,9 +43,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Toinounet21/crabeth/accounts"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/interfaces"
+	"github.com/Toinounet21/swapeth/accounts"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/interfaces"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/log"

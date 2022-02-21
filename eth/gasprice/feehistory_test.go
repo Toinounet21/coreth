@@ -32,11 +32,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/Toinounet21/crabeth/core"
-	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/swapeth/core"
+	"github.com/Toinounet21/swapeth/core/types"
 
-	"github.com/Toinounet21/crabeth/params"
-	"github.com/Toinounet21/crabeth/rpc"
+	"github.com/Toinounet21/swapeth/params"
+	"github.com/Toinounet21/swapeth/rpc"
 	"github.com/ethereum/go-ethereum/common"
 )
 

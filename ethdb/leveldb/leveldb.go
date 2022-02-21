@@ -37,7 +37,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Toinounet21/crabeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/metrics"

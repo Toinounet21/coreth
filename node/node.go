@@ -27,8 +27,8 @@
 package node
 
 import (
-	"github.com/Toinounet21/crabeth/accounts"
-	"github.com/Toinounet21/crabeth/rpc"
+	"github.com/Toinounet21/swapeth/accounts"
+	"github.com/Toinounet21/swapeth/rpc"
 )
 
 // Node is a container on which services can be registered.

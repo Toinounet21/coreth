@@ -29,7 +29,7 @@ package runtime_test
 import (
 	"fmt"
 
-	"github.com/Toinounet21/crabeth/core/vm/runtime"
+	"github.com/Toinounet21/swapeth/core/vm/runtime"
 	"github.com/ethereum/go-ethereum/common"
 )
 

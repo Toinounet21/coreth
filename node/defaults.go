@@ -27,7 +27,7 @@
 package node
 
 import (
-	"github.com/Toinounet21/crabeth/rpc"
+	"github.com/Toinounet21/swapeth/rpc"
 )
 
 const (

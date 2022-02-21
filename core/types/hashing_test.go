@@ -34,8 +34,8 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/trie"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/trie"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"

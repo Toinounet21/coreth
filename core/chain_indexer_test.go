@@ -35,8 +35,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Toinounet21/crabeth/core/rawdb"
-	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/swapeth/core/rawdb"
+	"github.com/Toinounet21/swapeth/core/types"
 	"github.com/ethereum/go-ethereum/common"
 )
 

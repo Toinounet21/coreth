@@ -32,9 +32,9 @@ import (
 	"time"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/Toinounet21/crabeth/core/rawdb"
-	"github.com/Toinounet21/crabeth/ethdb"
-	"github.com/Toinounet21/crabeth/trie"
+	"github.com/Toinounet21/swapeth/core/rawdb"
+	"github.com/Toinounet21/swapeth/ethdb"
+	"github.com/Toinounet21/swapeth/trie"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/rlp"
 )

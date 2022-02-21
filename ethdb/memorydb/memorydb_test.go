@@ -29,8 +29,8 @@ package memorydb
 import (
 	"testing"
 
-	"github.com/Toinounet21/crabeth/ethdb"
-	"github.com/Toinounet21/crabeth/ethdb/dbtest"
+	"github.com/Toinounet21/swapeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb/dbtest"
 )
 
 func TestMemoryDB(t *testing.T) {

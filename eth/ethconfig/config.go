@@ -29,9 +29,9 @@ package ethconfig
 import (
 	"time"
 
-	"github.com/Toinounet21/crabeth/core"
-	"github.com/Toinounet21/crabeth/eth/gasprice"
-	"github.com/Toinounet21/crabeth/miner"
+	"github.com/Toinounet21/swapeth/core"
+	"github.com/Toinounet21/swapeth/eth/gasprice"
+	"github.com/Toinounet21/swapeth/miner"
 	"github.com/ethereum/go-ethereum/common"
 )
 

@@ -30,7 +30,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/Toinounet21/crabeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb"
 )
 
 func TestTableDatabase(t *testing.T)            { testTableDatabase(t, "prefix") }

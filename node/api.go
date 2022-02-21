@@ -27,8 +27,8 @@
 package node
 
 import (
-	"github.com/Toinounet21/crabeth/internal/debug"
-	"github.com/Toinounet21/crabeth/rpc"
+	"github.com/Toinounet21/swapeth/internal/debug"
+	"github.com/Toinounet21/swapeth/rpc"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
 )

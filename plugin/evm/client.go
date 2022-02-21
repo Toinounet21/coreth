@@ -7,11 +7,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Toinounet21/crabalanchego/api"
-	"github.com/Toinounet21/crabalanchego/ids"
-	"github.com/Toinounet21/crabalanchego/utils/formatting"
-	cjson "github.com/Toinounet21/crabalanchego/utils/json"
-	"github.com/Toinounet21/crabalanchego/utils/rpc"
+	"github.com/Toinounet21/swapalanchego/api"
+	"github.com/Toinounet21/swapalanchego/ids"
+	"github.com/Toinounet21/swapalanchego/utils/formatting"
+	cjson "github.com/Toinounet21/swapalanchego/utils/json"
+	"github.com/Toinounet21/swapalanchego/utils/rpc"
 	"github.com/ethereum/go-ethereum/log"
 )
 

@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Toinounet21/crabalanchego/ids"
+	"github.com/Toinounet21/swapalanchego/ids"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
@@ -20,10 +20,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/Toinounet21/crabeth/core"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/params"
-	"github.com/Toinounet21/crabeth/plugin/evm/message"
+	"github.com/Toinounet21/swapeth/core"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/params"
+	"github.com/Toinounet21/swapeth/plugin/evm/message"
 )
 
 func fundAddressByGenesis(addrs []common.Address) (string, error) {

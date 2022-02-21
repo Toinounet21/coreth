@@ -27,7 +27,7 @@
 package trie
 
 import (
-	"github.com/Toinounet21/crabeth/ethdb/memorydb"
+	"github.com/Toinounet21/swapeth/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/common"
 )
 

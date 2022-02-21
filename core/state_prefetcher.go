@@ -30,11 +30,11 @@ import (
 	"math/big"
 	"sync/atomic"
 
-	"github.com/Toinounet21/crabeth/consensus"
-	"github.com/Toinounet21/crabeth/core/state"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/core/vm"
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/consensus"
+	"github.com/Toinounet21/swapeth/core/state"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/core/vm"
+	"github.com/Toinounet21/swapeth/params"
 )
 
 // statePrefetcher is a basic Prefetcher, which blindly executes a block on top

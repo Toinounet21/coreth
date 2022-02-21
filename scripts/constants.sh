@@ -4,7 +4,7 @@
 GOPATH="$(go env GOPATH)"
 
 # Set binary location
-binary_path=${CORETH_BINARY_PATH:-"$GOPATH/src/github.com/Toinounet21/crabalanchego/build/plugins/evm"}
+binary_path=${CORETH_BINARY_PATH:-"$GOPATH/src/github.com/Toinounet21/swapalanchego/build/plugins/evm"}
 
 # Avalabs docker hub
 dockerhub_repo="avaplatform/avalanchego"

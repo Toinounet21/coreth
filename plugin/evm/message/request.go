@@ -6,9 +6,9 @@ package message
 import (
 	"context"
 
-	"github.com/Toinounet21/crabalanchego/codec"
+	"github.com/Toinounet21/swapalanchego/codec"
 
-	"github.com/Toinounet21/crabalanchego/ids"
+	"github.com/Toinounet21/swapalanchego/ids"
 )
 
 // Request represents a Network request type

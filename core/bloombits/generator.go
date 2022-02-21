@@ -29,7 +29,7 @@ package bloombits
 import (
 	"errors"
 
-	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/swapeth/core/types"
 )
 
 var (

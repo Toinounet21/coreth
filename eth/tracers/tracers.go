@@ -21,7 +21,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/swapeth/core/vm"
 	"github.com/ethereum/go-ethereum/common"
 )
 

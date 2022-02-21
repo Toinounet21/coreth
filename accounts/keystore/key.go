@@ -39,7 +39,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Toinounet21/crabeth/accounts"
+	"github.com/Toinounet21/swapeth/accounts"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/google/uuid"

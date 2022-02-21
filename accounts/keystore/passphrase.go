@@ -48,7 +48,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Toinounet21/crabeth/accounts"
+	"github.com/Toinounet21/swapeth/accounts"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/crypto"

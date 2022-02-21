@@ -29,11 +29,11 @@ package core
 import (
 	"fmt"
 
-	"github.com/Toinounet21/crabeth/consensus"
-	"github.com/Toinounet21/crabeth/core/state"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/params"
-	"github.com/Toinounet21/crabeth/trie"
+	"github.com/Toinounet21/swapeth/consensus"
+	"github.com/Toinounet21/swapeth/core/state"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/params"
+	"github.com/Toinounet21/swapeth/trie"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

@@ -29,9 +29,9 @@ package core
 import (
 	"math/big"
 
-	"github.com/Toinounet21/crabeth/consensus"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/swapeth/consensus"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/core/vm"
 	"github.com/ethereum/go-ethereum/common"
 	//"github.com/ethereum/go-ethereum/log"
 )

@@ -33,7 +33,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Toinounet21/crabeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb"
 	"github.com/ethereum/go-ethereum/common"
 )
 

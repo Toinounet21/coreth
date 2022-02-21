@@ -33,9 +33,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Toinounet21/crabeth/ethdb"
-	"github.com/Toinounet21/crabeth/ethdb/memorydb"
-	"github.com/Toinounet21/crabeth/trie"
+	"github.com/Toinounet21/swapeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb/memorydb"
+	"github.com/Toinounet21/swapeth/trie"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/rawdb"
 	"github.com/ethereum/go-ethereum/log"

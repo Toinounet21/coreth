@@ -32,10 +32,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Toinounet21/crabeth/accounts"
-	"github.com/Toinounet21/crabeth/accounts/external"
-	"github.com/Toinounet21/crabeth/accounts/keystore"
-	"github.com/Toinounet21/crabeth/rpc"
+	"github.com/Toinounet21/swapeth/accounts"
+	"github.com/Toinounet21/swapeth/accounts/external"
+	"github.com/Toinounet21/swapeth/accounts/keystore"
+	"github.com/Toinounet21/swapeth/rpc"
 	"github.com/ethereum/go-ethereum/log"
 )
 

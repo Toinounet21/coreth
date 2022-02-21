@@ -27,7 +27,7 @@
 package rawdb
 
 import (
-	"github.com/Toinounet21/crabeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb"
 )
 
 // table is a wrapper around a database that prefixes each key access with a pre-

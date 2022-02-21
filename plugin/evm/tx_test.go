@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Toinounet21/crabalanchego/chains/atomic"
-	"github.com/Toinounet21/crabalanchego/snow"
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapalanchego/chains/atomic"
+	"github.com/Toinounet21/swapalanchego/snow"
+	"github.com/Toinounet21/swapeth/params"
 )
 
 func TestCalculateDynamicFee(t *testing.T) {

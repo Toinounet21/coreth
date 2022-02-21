@@ -32,7 +32,7 @@ import (
 	"testing"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/Toinounet21/crabeth/ethdb/memorydb"
+	"github.com/Toinounet21/swapeth/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 )

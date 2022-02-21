@@ -1,10 +1,10 @@
-module github.com/Toinounet21/crabeth
+module github.com/Toinounet21/swapeth
 
 go 1.16
 
 require (
 	github.com/VictoriaMetrics/fastcache v1.6.0
-	github.com/Toinounet21/crabalanchego v1.8.2
+	github.com/Toinounet21/swapalanchego v1.8.2
 	github.com/btcsuite/btcd v0.21.0-beta // indirect
 	github.com/cespare/cp v0.1.0
 	github.com/davecgh/go-spew v1.1.1

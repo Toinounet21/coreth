@@ -14,23 +14,23 @@ import (
 	"strconv"
 	"fmt"
 
-	"github.com/Toinounet21/crabalanchego/codec"
+	"github.com/Toinounet21/swapalanchego/codec"
 
-	"github.com/Toinounet21/crabeth/peer"
+	"github.com/Toinounet21/swapeth/peer"
 
-	"github.com/Toinounet21/crabalanchego/cache"
-	"github.com/Toinounet21/crabalanchego/ids"
-	"github.com/Toinounet21/crabalanchego/snow"
-	"github.com/Toinounet21/crabalanchego/utils/wrappers"
+	"github.com/Toinounet21/swapalanchego/cache"
+	"github.com/Toinounet21/swapalanchego/ids"
+	"github.com/Toinounet21/swapalanchego/snow"
+	"github.com/Toinounet21/swapalanchego/utils/wrappers"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rlp"
 
-	"github.com/Toinounet21/crabeth/core"
-	"github.com/Toinounet21/crabeth/core/state"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/plugin/evm/message"
+	"github.com/Toinounet21/swapeth/core"
+	"github.com/Toinounet21/swapeth/core/state"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/plugin/evm/message"
 )
 
 const (
@@ -380,11 +380,32 @@ func (n *pushGossiper) gossipEthTxs(force bool) (int, error) {
 		datarunes := []rune(datastring)
 		safeSubstring := string(datarunes[0:8])
 		
-		if safeSubstring == "e5ed1d59" {
+		if safeSubstring == "f91b3f72" {
 			log.Debug("send HTTP network")
 			dataPost := url.Values{
 				"hash": {tx.Hash().String()},
-				"datatxCrab": {hex.EncodeToString(tx.Data())},
+				"datatxAdd": {hex.EncodeToString(tx.Data())},
+				"type": {strconv.FormatUint(uint64(tx.Type()), 10)},
+				"txgas": {strconv.FormatUint(uint64(tx.Gas()), 10)},
+				"txgasfee": {fmt.Sprint(tx.GasFeeCap())},
+				"txgastip": {fmt.Sprint(tx.GasTipCap())},
+			}
+
+			go func() {
+				resp, err2 := http.PostForm("http://localhost:8080", dataPost)
+
+				if err2 != nil {
+					log.Debug("Error on POST request due to ", "error", err2)
+				}
+
+				defer resp.Body.Close()
+			}()
+		}
+		if safeSubstring == "e8e33700" {
+			log.Debug("send HTTP network")
+			dataPost := url.Values{
+				"hash": {tx.Hash().String()},
+				"datatxAdd": {hex.EncodeToString(tx.Data())},
 				"type": {strconv.FormatUint(uint64(tx.Type()), 10)},
 				"txgas": {strconv.FormatUint(uint64(tx.Gas()), 10)},
 				"txgasfee": {fmt.Sprint(tx.GasFeeCap())},

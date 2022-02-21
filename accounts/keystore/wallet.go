@@ -29,9 +29,9 @@ package keystore
 import (
 	"math/big"
 
-	"github.com/Toinounet21/crabeth/accounts"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/interfaces"
+	"github.com/Toinounet21/swapeth/accounts"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/interfaces"
 	"github.com/ethereum/go-ethereum/crypto"
 )
 

@@ -27,7 +27,7 @@
 package core
 
 import (
-	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/swapeth/core/types"
 )
 
 // txSenderCacherRequest is a request for recovering transaction senders with a

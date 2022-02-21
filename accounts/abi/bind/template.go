@@ -26,7 +26,7 @@
 
 package bind
 
-import "github.com/Toinounet21/crabeth/accounts/abi"
+import "github.com/Toinounet21/swapeth/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -102,10 +102,10 @@ import (
 	"strings"
 	"errors"
 
-	"github.com/Toinounet21/crabeth/accounts/abi"
-	"github.com/Toinounet21/crabeth/accounts/abi/bind"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/interfaces"
+	"github.com/Toinounet21/swapeth/accounts/abi"
+	"github.com/Toinounet21/swapeth/accounts/abi/bind"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/interfaces"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/event"
 )

@@ -31,7 +31,7 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/params"
 )
 
 // Forks table defines supported forks and their chain config.

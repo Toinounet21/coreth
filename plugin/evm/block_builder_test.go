@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/params"
 
-	"github.com/Toinounet21/crabalanchego/snow"
+	"github.com/Toinounet21/swapalanchego/snow"
 )
 
 func TestBlockBuilderShutsDown(t *testing.T) {

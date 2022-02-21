@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/params"
 )
 
 type gasPriceUpdater struct {

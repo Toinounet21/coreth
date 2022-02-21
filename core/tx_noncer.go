@@ -29,7 +29,7 @@ package core
 import (
 	"sync"
 
-	"github.com/Toinounet21/crabeth/core/state"
+	"github.com/Toinounet21/swapeth/core/state"
 	"github.com/ethereum/go-ethereum/common"
 )
 

@@ -27,8 +27,8 @@
 package runtime
 
 import (
-	"github.com/Toinounet21/crabeth/core"
-	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/swapeth/core"
+	"github.com/Toinounet21/swapeth/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

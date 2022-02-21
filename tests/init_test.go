@@ -40,7 +40,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/params"
 )
 
 func readJSON(reader io.Reader, value interface{}) error {

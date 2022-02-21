@@ -34,21 +34,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Toinounet21/crabeth/accounts/abi"
-	"github.com/Toinounet21/crabeth/consensus"
-	"github.com/Toinounet21/crabeth/core"
-	"github.com/Toinounet21/crabeth/core/rawdb"
-	"github.com/Toinounet21/crabeth/core/state"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/core/vm"
-	"github.com/Toinounet21/crabeth/eth/tracers"
-	"github.com/Toinounet21/crabeth/eth/tracers/logger"
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/accounts/abi"
+	"github.com/Toinounet21/swapeth/consensus"
+	"github.com/Toinounet21/swapeth/core"
+	"github.com/Toinounet21/swapeth/core/rawdb"
+	"github.com/Toinounet21/swapeth/core/state"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/core/vm"
+	"github.com/Toinounet21/swapeth/eth/tracers"
+	"github.com/Toinounet21/swapeth/eth/tracers/logger"
+	"github.com/Toinounet21/swapeth/params"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/asm"
 
 	// force-load js tracers to trigger registration
-	_ "github.com/Toinounet21/crabeth/eth/tracers/js"
+	_ "github.com/Toinounet21/swapeth/eth/tracers/js"
 )
 
 func TestDefaults(t *testing.T) {

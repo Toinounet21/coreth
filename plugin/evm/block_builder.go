@@ -8,12 +8,12 @@ import (
 	"sync"
 	"time"
 
-	coreth "github.com/Toinounet21/crabeth/chain"
-	"github.com/Toinounet21/crabeth/params"
+	coreth "github.com/Toinounet21/swapeth/chain"
+	"github.com/Toinounet21/swapeth/params"
 
-	"github.com/Toinounet21/crabalanchego/snow"
-	commonEng "github.com/Toinounet21/crabalanchego/snow/engine/common"
-	"github.com/Toinounet21/crabalanchego/utils/timer"
+	"github.com/Toinounet21/swapalanchego/snow"
+	commonEng "github.com/Toinounet21/swapalanchego/snow/engine/common"
+	"github.com/Toinounet21/swapalanchego/utils/timer"
 	"github.com/ethereum/go-ethereum/log"
 )
 

@@ -29,7 +29,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/params"
 )
 
 type (

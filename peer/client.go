@@ -4,7 +4,7 @@
 package peer
 
 import (
-	"github.com/Toinounet21/crabalanchego/version"
+	"github.com/Toinounet21/swapalanchego/version"
 )
 
 var _ Client = &client{}

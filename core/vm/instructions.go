@@ -30,8 +30,8 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/params"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/holiman/uint256"
 	"golang.org/x/crypto/sha3"

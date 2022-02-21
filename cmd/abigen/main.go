@@ -35,9 +35,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/Toinounet21/crabeth/accounts/abi"
-	"github.com/Toinounet21/crabeth/accounts/abi/bind"
-	"github.com/Toinounet21/crabeth/internal/flags"
+	"github.com/Toinounet21/swapeth/accounts/abi"
+	"github.com/Toinounet21/swapeth/accounts/abi/bind"
+	"github.com/Toinounet21/swapeth/internal/flags"
 	"github.com/ethereum/go-ethereum/cmd/utils"
 	"github.com/ethereum/go-ethereum/common/compiler"
 	"github.com/ethereum/go-ethereum/crypto"

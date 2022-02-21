@@ -51,7 +51,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Toinounet21/crabeth/accounts"
+	"github.com/Toinounet21/swapeth/accounts"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/event"
 	"github.com/ethereum/go-ethereum/log"

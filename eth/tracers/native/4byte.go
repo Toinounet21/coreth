@@ -33,8 +33,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Toinounet21/crabeth/core/vm"
-	"github.com/Toinounet21/crabeth/eth/tracers"
+	"github.com/Toinounet21/swapeth/core/vm"
+	"github.com/Toinounet21/swapeth/eth/tracers"
 	"github.com/ethereum/go-ethereum/common"
 )
 

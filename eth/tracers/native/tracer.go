@@ -47,7 +47,7 @@ package native
 import (
 	"errors"
 
-	"github.com/Toinounet21/crabeth/eth/tracers"
+	"github.com/Toinounet21/swapeth/eth/tracers"
 )
 
 // init registers itself this packages as a lookup for tracers.

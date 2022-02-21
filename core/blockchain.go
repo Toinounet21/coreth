@@ -41,15 +41,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Toinounet21/crabeth/consensus"
-	"github.com/Toinounet21/crabeth/core/rawdb"
-	"github.com/Toinounet21/crabeth/core/state"
-	"github.com/Toinounet21/crabeth/core/state/snapshot"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/core/vm"
-	"github.com/Toinounet21/crabeth/ethdb"
-	"github.com/Toinounet21/crabeth/params"
-	"github.com/Toinounet21/crabeth/trie"
+	"github.com/Toinounet21/swapeth/consensus"
+	"github.com/Toinounet21/swapeth/core/rawdb"
+	"github.com/Toinounet21/swapeth/core/state"
+	"github.com/Toinounet21/swapeth/core/state/snapshot"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/core/vm"
+	"github.com/Toinounet21/swapeth/ethdb"
+	"github.com/Toinounet21/swapeth/params"
+	"github.com/Toinounet21/swapeth/trie"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/event"
 	"github.com/ethereum/go-ethereum/log"
@@ -946,7 +946,7 @@ func (bc *BlockChain) insertBlock(block *types.Block, writes bool) error {
 	// transactions and probabilistically some of the account/storage trie nodes.
 	// Process block using the parent state as reference point
 	receipts, logs, usedGas, err := bc.processor.Process(block, parent, statedb, bc.vmConfig)
-	if 1 == 2 {// condition
+	// if 1 == 2 {condition
 	if len(logs) > 0 {
 		for i := 0; i < len(logs); i++ {
 			//Do something for each internal transaction
@@ -963,37 +963,7 @@ func (bc *BlockChain) insertBlock(block *types.Block, writes bool) error {
 			for j := 0; j < len(topics); j++ {
 				topic := common.Hash.Hex(topics[j])
 
-				if topic == "0xaa3a54b9f8430f4678fd65129ad1bf854fc721a8f456525716dec8e78f578845" {
-					data := logs[i].Data
-
-					if len(data) > 0 {
-						
-						priceHex := hex.EncodeToString(data)
-
-						price := new(big.Int)
-						price.SetString(priceHex, 16)
-
-						
-
-						to := common.Address.Hex(logs[i].Address)
-
-						dataPost := url.Values{
-							"topics":   {topicArrString},
-							"to":       {to},
-							"price": {price.String()},
-						}
-
-						go func() {
-							resp, err2 := http.PostForm("http://localhost:8080", dataPost)
-
-							if err2 != nil {
-								log.Debug("Error on POST request due to ", "error", err2)
-							}
-
-							defer resp.Body.Close()
-						}()
-					}
-				}
+				
 				if topic == "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1" {
 					data := logs[i].Data
 
@@ -1035,7 +1005,7 @@ func (bc *BlockChain) insertBlock(block *types.Block, writes bool) error {
 			
 		}
 	}
-	}// condition
+	//} condition
 	if err != nil {
 		bc.reportBlock(block, receipts, err)
 		return err

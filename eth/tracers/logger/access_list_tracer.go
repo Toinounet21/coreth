@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/core/vm"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/core/vm"
 	"github.com/ethereum/go-ethereum/common"
 )
 

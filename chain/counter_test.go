@@ -15,7 +15,7 @@ import (
 
 	"testing"
 
-	"github.com/Toinounet21/crabeth/core/types"
+	"github.com/Toinounet21/swapeth/core/types"
 	"github.com/ethereum/go-ethereum/common"
 
 	"github.com/ethereum/go-ethereum/log"
@@ -30,7 +30,7 @@ func TestCounter(t *testing.T) {
 
 	// NOTE: use precompiled `counter.sol` for portability, do not remove the
 	// following code (for debug purpose)
-	//counterSrc, err := filepath.Abs(gopath + "/src/github.com/Toinounet21/crabeth/examples/counter/counter.sol")
+	//counterSrc, err := filepath.Abs(gopath + "/src/github.com/Toinounet21/swapeth/examples/counter/counter.sol")
 	// if err != nil {
 	// 	t.Fatal(err)
 	// }

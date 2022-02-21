@@ -32,7 +32,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/Toinounet21/crabeth/ethdb"
+	"github.com/Toinounet21/swapeth/ethdb"
 )
 
 // TestDatabaseSuite runs a suite of tests against a KeyValueStore database

@@ -27,7 +27,7 @@
 package vm
 
 import (
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/params"
 )
 
 func minSwapStack(n int) int {

@@ -6,12 +6,12 @@ package message
 import (
 	"errors"
 
-	"github.com/Toinounet21/crabalanchego/codec"
+	"github.com/Toinounet21/swapalanchego/codec"
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/Toinounet21/crabalanchego/ids"
-	"github.com/Toinounet21/crabalanchego/utils/units"
+	"github.com/Toinounet21/swapalanchego/ids"
+	"github.com/Toinounet21/swapalanchego/utils/units"
 )
 
 const (

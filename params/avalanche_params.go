@@ -6,7 +6,7 @@ package params
 import (
 	"math/big"
 
-	"github.com/Toinounet21/crabalanchego/utils/units"
+	"github.com/Toinounet21/swapalanchego/utils/units"
 )
 
 // Minimum Gas Price

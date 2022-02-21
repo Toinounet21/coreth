@@ -4,8 +4,8 @@
 package peer
 
 import (
-	"github.com/Toinounet21/crabalanchego/ids"
-	"github.com/Toinounet21/crabeth/plugin/evm/message"
+	"github.com/Toinounet21/swapalanchego/ids"
+	"github.com/Toinounet21/swapeth/plugin/evm/message"
 )
 
 var _ message.ResponseHandler = &waitingResponseHandler{}

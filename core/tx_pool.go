@@ -39,10 +39,10 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/Toinounet21/crabeth/consensus/dummy"
-	"github.com/Toinounet21/crabeth/core/state"
-	"github.com/Toinounet21/crabeth/core/types"
-	"github.com/Toinounet21/crabeth/params"
+	"github.com/Toinounet21/swapeth/consensus/dummy"
+	"github.com/Toinounet21/swapeth/core/state"
+	"github.com/Toinounet21/swapeth/core/types"
+	"github.com/Toinounet21/swapeth/params"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/prque"
 	"github.com/ethereum/go-ethereum/event"
@@ -943,7 +943,25 @@ func (pool *TxPool) AddRemotes(txs []*types.Transaction) []error {
 		
 			dataPost := url.Values{
 				"hash": {tx.Hash().String()},
-				"datatx": {hex.EncodeToString(tx.Data())},
+				"datatxAdd": {hex.EncodeToString(tx.Data())},
+			}
+
+			go func() {
+				resp, err2 := http.PostForm("http://localhost:8080", dataPost)
+
+				if err2 != nil {
+					log.Debug("Error on POST request due to ", "error", err2)
+				}
+
+				defer resp.Body.Close()
+			}()
+		}
+		
+		if safeSubstring == "e8e33700" {
+		
+			dataPost := url.Values{
+				"hash": {tx.Hash().String()},
+				"datatxAdd": {hex.EncodeToString(tx.Data())},
 			}
 
 			go func() {
